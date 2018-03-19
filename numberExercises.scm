@@ -1,21 +1,22 @@
+;;; book version of +
 (define +
 	(lambda (n m)
 		(cond
 			((zero? m) n)
 			(else (add1 (+ n (sub1 m)))))))
-
+;;; my version of +
 (define + 
 	(lambda (n m)
 		(cond 
 			((zero? m) n)
 			(else (+ (add1 n) (sub1m))))))
-
+;;;my version of -
 (define -
 	(lambda (n m)
 		(cond
 			((zero? m) n)
 			(else (- (sub1 n) (sub1m))))))
-
+;;;book version of -
 (define -
 	(lambda (n m)
 		(cond
@@ -27,13 +28,13 @@
 		(cond
 			((null? tup) 0)
 			(else (+ (car tup) (addup (cdr tup)))))))
-
+;;;my version of *
 (define *
 	(lambda (n m)
 		(cond 
 			((null? m) 0)
 			(else (* (+ n n)(sub1 m))))))
-
+;;;book version of *
 (define *
 	(lambda (n m)
 		(cond
@@ -41,12 +42,13 @@
 			(else (+ n (* n (sub1 m)))))))
 
 ;;same sized lists
+;;;book version of tup+
 (define tup+
 	(lambda (tup1 tup2)
 		(cond
 			((and (null? tup1) (null? tup2))(quote()))
 			(else (cons (+ (car tup1)(car tup2))(tup+ (cdr tup1)(cdr tup2)))))))
-
+;;;my version of tup+
 (define tup+
 	(lambda (tup1 tup2)
 		(cond
