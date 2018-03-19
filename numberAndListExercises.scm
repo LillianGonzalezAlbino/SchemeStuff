@@ -54,13 +54,13 @@
 		(cond
 			((zero? (sub1 n)) #t)
 			(else #f))))
-
+;;;one? fixed (the one I made)
 (define one?
 	(lambda (n)
 		(cond
 			((zero? n) #f)
 			(else (zero? (sub1 n))))))
-
+;;;the one the book gives
 (define one?
 	(lambda (n)
 		(cond 
